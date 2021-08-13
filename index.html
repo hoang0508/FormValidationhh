@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <div class="login">
+        <div class="login__content">
+            <div class="login__img">
+                <img src="./assets/img/img-login.svg" alt="">
+            </div>
+            <div class="login__forms">
+                <form action="#" class="login__register" autocomplete="off">
+                    <h1 class="login__title">Sign in</h1>
+                    <div class="login__box">
+                        <i class='bx bx-user login__icon'></i>
+                        <input type="text" name="user" class="login__input" placeholder="Username">
+                    </div>
+                    <div class="login__box">
+                        <i class='bx bx-lock login__icon'></i>
+                        <input type="password" name="pass" class="login__input" placeholder="Password">
+                        <i class="fa fa-eye icon-eye" aria-hidden="true"></i>
+                    </div>
+                    <a href="#" class="login__forgot">Forgot password</a>
+                    <button type="submit" class="login__button">Sign in</button>
+
+                    <div>
+                        <span class="login__acount">Don't have an Acount?</span>
+                        <span class="login__singin" id="sign-up">Sign Up</span>
+                    </div>
+                </form>
+
+                <form action="#" class="login__create none" autocomplete="off">
+                    <h1 class="login__title">Create Acount</h1>
+                    <div class="login__box">
+                        <i class='bx bx-user login__icon'></i>
+                        <input type="text" name="user" class="login__input" placeholder="Username">
+                    </div>
+                    <div class="login__box">
+                        <i class='bx bx-at login__icon'></i>
+                        <input type="text" name="email" class="login__input" placeholder="Email">
+                    </div>
+                    <div class="login__box">
+                        <i class='bx bx-lock login__icon'></i>
+                        <input type="password" name="pass" class="login__input" placeholder="Password">
+                        <i class="fa fa-eye icon-eye" aria-hidden="true"></i>
+                    </div>
+                    <button type="submit" class="login__button">Sign up</button>
+
+                    <div>
+                        <span class="login__acount">Already have an Acount</span>
+                        <span class="login__signup" id="sign-in">Sign In</span>
+                    </div>
+
+                    <div class="login__social">
+                        <a href="#" class="login__social-icon">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+                        <a href="#" class="login__social-icon">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
+                        <a href="#" class="login__social-icon">
+                            <i class='bx bxl-google'></i>
+                        </a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <div class="sweet-alert">
+            <i class="fa fa-times alert-close"></i>
+            <div class="alert-message">
+                <i class="fa fa-check icon-message"></i>
+                <span class="span-txt">Please enter the name in the correct format</span>
+            </div>
+        </div>
+    </div>
+
+    <script defer src="./assets/app.js"></script>
+</body>
+
+</html>
